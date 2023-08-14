@@ -7,13 +7,13 @@ function App() {
 
     const handleHobolo = () => {
         // Sessiz harfleri "o" ile değiştirme işlemi
-        const updatedValue = inputValue.replace(/[aeıioöuü]/gi, 'o');
+        const updatedValue = inputValue.replace(/[aeıiöuü]/gi, 'o').replace(/[aeıiöuü]/gi,'O');
         setOutputValue(updatedValue);
     };
 
     const handleSezercik = () => {
         // Sessiz harfleri "o" ile değiştirme işlemi
-        const updatedValue = inputValue.replace('r', 'y');
+        const updatedValue = inputValue.replace('r', 'y').replace('R', 'Y');
         setOutputValue(updatedValue);
     };
 
